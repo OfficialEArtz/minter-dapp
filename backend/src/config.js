@@ -42,16 +42,16 @@ const extraMetadata = {
 // ** REQUIRED **
 const AUTH = process.env.NFTPORT_API_KEY; // Set this in the .env file to prevent exposing your API key when pushing to Github
 const LIMIT = 2; // Your API key rate limit
-const CHAIN = 'goerli'; // only goerli, polygon, or ethereum
+const CHAIN = 'polygon'; // only goerli, polygon, or ethereum
 
 // REQUIRED CONTRACT DETAILS THAT CANNOT BE UPDATED LATER!
 const CONTRACT_NAME = 'SUPREMECULT';
 const CONTRACT_SYMBOL = 'SC';
-const METADATA_UPDATABLE = false; // set to false if you don't want to allow metadata updates after minting
+const METADATA_UPDATABLE = true; // set to false if you don't want to allow metadata updates after minting
 const OWNER_ADDRESS = '0xad868DeA7e8bD1D97C1b3A8d4CCA2E361049D3CA';
 const TREASURY_ADDRESS = '0xad868DeA7e8bD1D97C1b3A8d4CCA2E361049D3CA';
 const MAX_SUPPLY = 5000; // The maximum number of NFTs that can be minted. CANNOT BE UPDATED!
-const MINT_PRICE = 0.01; // Minting price per NFT. Goerli = ETH, Ethereum = ETH, Polygon = MATIC. CANNOT BE UPDATED!
+const MINT_PRICE = 9; // Minting price per NFT. Goerli = ETH, Ethereum = ETH, Polygon = MATIC. CANNOT BE UPDATED!
 const TOKENS_PER_MINT = 10; // maximum number of NFTs a user can mint in a single transaction. CANNOT BE UPDATED!
 
 // REQUIRED CONTRACT DETAILS THAT CAN BE UPDATED LATER.

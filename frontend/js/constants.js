@@ -1,5 +1,5 @@
-const contractAddress = "0x699D43B2f9C388C53c44E8f56De5c05Fb3a4b74c"; // Replace with your own contract address
-const chain = 'goerli'; // goerli, polygon, or ethereum
+const contractAddress = "0x4f9fA7Ca6314eb7651E8A3d78f6B486d4Ba8d9FD"; // Replace with your own contract address
+const chain = 'polygon'; // goerli, polygon, or ethereum
 
 const welcome_h1 = "Welcome to SUPREMECULT";
 const welcome_h2 = "Connect to MetaMask to Get Started";
