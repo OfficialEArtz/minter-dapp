@@ -1,4 +1,4 @@
-const contractAddress = "0x4f9fA7Ca6314eb7651E8A3d78f6B486d4Ba8d9FD"; // Replace with your own contract address
+const contractAddress = "0xb93D8e87E0e8cbD4a19a990db8C7101E27b5e33a"; // Replace with your own contract address
 const chain = 'polygon'; // goerli, polygon, or ethereum
 
 const welcome_h1 = "Welcome to SUPREMECULT";
