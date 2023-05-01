@@ -315,7 +315,7 @@ async function mint() {
     try {
       const mintTransaction = await contract.methods
         .mint(amount)
-        .send({ from: window.address, value: value.toString() });
+        .send({ from: window.address, value: value.toString(), maxPriorityFeePerGas: null, maxFeePerGas: null });
       if(mintTransaction) {
         if(chain === 'goerli') {
           const url = `https://goerli.etherscan.io/tx/${mintTransaction.transactionHash}`;
@@ -352,7 +352,7 @@ async function mint() {
       const merkleJson = await merkleData.json();
       const presaleMintTransaction = await contract.methods
         .presaleMint(amount, merkleJson)
-        .send({ from: window.address, value: value.toString() });
+        .send({ from: window.address, value: value.toString(), maxPriorityFeePerGas: null, maxFeePerGas: null });
       if(presaleMintTransaction) {
         if(chain === 'goerli') {
           const url = `https://goerli.etherscan.io/tx/${presaleMintTransaction.transactionHash}`;
